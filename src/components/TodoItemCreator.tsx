@@ -1,6 +1,7 @@
 import React, { useState, FC } from 'react';
 import { useSetRecoilState } from 'recoil';
 import { todoListState } from '../recoil';
+import { getId } from '../utils';
 
 export const TodoItemCreator: FC = () => {
   const [inputValue, setInputValue] = useState<string>('');
@@ -30,7 +31,3 @@ export const TodoItemCreator: FC = () => {
   );
 };
 
-/** Get incremented id utility */
-let id = 0;
-
-const getId = () => id++;
