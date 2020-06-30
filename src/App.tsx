@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
+import { TodoList } from './components/TodoList';
 
-export const App = () => {
-  return <div>hi</div>;
-};
+export const App = () => <TodoList />;
